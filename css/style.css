@@ -1,0 +1,39 @@
+body {
+   background-image: url(../images/background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 945px;
+
+}
+
+
+.sonic {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    margin-top: 370px;
+    animation: move 5s infinite ;
+}
+
+
+.ring {
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    left: -200px;
+    height: auto;
+    animation: circle 5s infinite ;
+}
+
+@keyframes move {
+    0% {left: -700px;}
+    90% {left: 800px;}
+    100% {left: 800px;}
+
+}
+
+@keyframes circle {
+    0% {left: -100px;}
+    75% {left: 900px; top:500px}
+    100% {left: 900px; top: 150px;}
+}
